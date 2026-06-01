@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #0F172A; /* Deep Slate Navy */
+  --primary: #0F172A;
+  --accent-gold: #0B2545; /* McKinsey Deep Navy Accent */
+  --accent-gold-hover: #134074;
+  --card-bg: #FFFFFF;
+  --border-color: rgba(15, 23, 42, 0.08);
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-gold: var(--accent-gold);
+  --color-gold-hover: var(--accent-gold-hover);
+  --color-card: var(--card-bg);
+  --color-border-subtle: var(--border-color);
+  
+  --font-sans: var(--font-outfit), system-ui, -apple-system, sans-serif;
+  --font-serif: var(--font-playfair), Georgia, serif;
+}
+
+/* Custom Base Overrides */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Premium Visual Utilities */
+.glass-panel {
+  background: #FFFFFF;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.04), 0 2px 10px -1px rgba(15, 23, 42, 0.02);
+}
+
+.glass-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 16px; /* Rounded card corners */
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.01), 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.glass-card:hover {
+  background: #FFFFFF;
+  border-color: rgba(11, 37, 69, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.06), 0 6px 15px -8px rgba(15, 23, 42, 0.06);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #0B2545 0%, #1D4ED8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-slate {
+  background: linear-gradient(135deg, #0F172A 0%, #334155 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Decorative Shadow Utilities */
+.gold-glow {
+  box-shadow: 0 10px 35px -8px rgba(15, 23, 42, 0.05), 0 4px 15px -4px rgba(15, 23, 42, 0.03);
+}
+
+.timeline-glow {
+  box-shadow: 0 0 12px rgba(11, 37, 69, 0.2);
+}
+
+/* Custom Scrollbar for Premium Feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E2E8F0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0B2545;
+}
