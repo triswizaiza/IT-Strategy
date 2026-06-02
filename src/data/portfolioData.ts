@@ -59,6 +59,7 @@ export const portfolioData = {
     subTitle: "I am an IT Strategy & Transformation Consultant with experience across KPMG and PwC, supporting technology strategy, enterprise architecture, IT due diligence, change management, and data-driven transformation initiatives across aviation, financial services, and automotive sectors.",
     email: "triswizaiza@gmail.com",
     linkedIn: "https://www.linkedin.com/in/triswizaariatama",
+    whatsApp: "628123456789", // Format: Kode internasional tanpa + atau 0 (contoh: 628123456789)
     location: "Jakarta, Indonesia",
     calendlyLink: "https://calendly.com", // Placeholder
     resumeUrl: "#", // Placeholder
